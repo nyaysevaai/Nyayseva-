@@ -5,86 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nyayseva – Your Legal AI Assistant</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #111;
-      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: white;
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem 2rem;
       text-align: center;
+      padding: 2rem 1rem 1rem;
     }
 
-    header h1 {
+    header img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
       font-size: 1.8rem;
     }
 
-    main {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
+    p {
+      margin: 0.5rem 0 1rem;
+      max-width: 90%;
+      line-height: 1.4;
+      font-size: 1rem;
+      color: #ccc;
     }
 
     .chat-container {
       width: 100%;
-      max-width: 960px;
-      height: 90vh;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      max-width: 900px;
+      height: 80vh;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      background: #fff;
     }
 
     iframe {
       width: 100%;
       height: 100%;
       border: none;
-      border-radius: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.3rem;
-      }
     }
   </style>
 </head>
 <body>
-
   <header>
+    <img src="logo.png" alt="Nyayseva Logo">
     <h1>Nyayseva – Your Legal AI Assistant</h1>
+    <p>Ask legal questions about Indian law and get free, instant answers with our AI chatbot.</p>
   </header>
 
-  <main>
-    <div class="chat-container">
-      <iframe
-        src="https://www.chatbase.co/chatbot-iframe/C_X-2VMhcud_7omHG6PIo"
-        allow="microphone;"
-      ></iframe>
-    </div>
-  </main>
-
-  <footer>
-    © 2025 Nyayseva. All rights reserved.
-  </footer>
-
+  <div class="chat-container">
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/C_X-2VMhcud_7omHG6PIo"
+      allow="clipboard-write; clipboard-read"
+    ></iframe>
+  </div>
 </body>
 </html>
