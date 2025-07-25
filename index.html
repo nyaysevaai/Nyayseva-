@@ -13,38 +13,71 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: start;
       min-height: 100vh;
+      animation: fadeIn 1.2s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     header {
+      width: 100%;
+      display: flex;
+      align-items: center;
       padding: 20px;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .logo {
+      height: 40px;
+      width: 40px;
+      border-radius: 6px;
+    }
+
+    .title {
       font-size: 1.8rem;
       font-weight: bold;
-      text-align: center;
     }
+
     iframe {
       width: 100%;
       max-width: 800px;
       height: 80vh;
       border: none;
       border-radius: 12px;
+      margin: 20px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     }
+
     footer {
       padding: 10px;
       font-size: 0.9rem;
-      color: #999;
+      color: #888;
       text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>🧑‍⚖️ Nyayseva - AI Legal Assistant</header>
-  
+  <header>
+    <!-- This uses your GitHub-hosted logo.png file -->
+    <img src="./logo.png" alt="Nyayseva Logo" class="logo">
+    <div class="title">Nyayseva - AI Legal Assistant</div>
+  </header>
+
   <iframe 
     src="https://www.chatbase.co/chatbot-iframe/C_X-2VMhcud_7omHG6PIo" 
     allow="clipboard-write"
   ></iframe>
 
-  <footer>Made with ❤️ for legal awareness</footer>
+  <footer>© 2025 Nyayseva. Built for justice seekers 🧑‍⚖️</footer>
 </body>
 </html>
