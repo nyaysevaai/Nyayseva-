@@ -1,0 +1,33 @@
+{
+  "name": "Gemini Chatbot",
+  "description": "Simple Gemini backend flow",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "ChatGoogleGenerativeAI",
+      "type": "ChatGoogleGenerativeAI",
+      "position": { "x": 200, "y": 200 },
+      "data": {
+        "projectId": "",
+        "apiKey": "AIzaSyD9EXJc2wOystHO8ORx3bETzJThaiyOQEE",
+        "model": "gemini-pro"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Input",
+      "type": "Input",
+      "position": { "x": 0, "y": 200 }
+    },
+    {
+      "id": "3",
+      "name": "Output",
+      "type": "Output",
+      "position": { "x": 400, "y": 200 }
+    }
+  ],
+  "edges": [
+    { "source": "2", "target": "1", "sourceHandle": null, "targetHandle": null },
+    { "source": "1", "target": "3", "sourceHandle": null, "targetHandle": null }
+  ]
+}
